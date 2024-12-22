@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Парикмахерская Персона</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="_01.png" alt="Логотип">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#cosmetics">Косметика</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#online-booking" class="online-booking">Онлайн запись</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">ПАРИКМАХЕРСКАЯ ПЕРСОНА</h1>
+      <button class="learn-more">Узнать больше</button>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Услуги</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <img src="photo0.png" alt="Топ-мастер">
+        <div class="service-details">
+          <p class="service-text">Топ-мастер</p>
+          <a href="#online-booking" class="service-price-button">1.500Р</a>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="photo1.png" alt="Старший мастер">
+        <div class="service-details">
+          <p class="service-text">Старший-мастер</p>
+          <a href="#online-booking" class="service-price-button">1.200Р</a>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="photo2.png" alt="Младший мастер">
+        <div class="service-details">
+          <p class="service-text">Младший-мастер</p>
+          <a href="#online-booking" class="service-price-button">1.000Р</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cosmetics" id="cosmetics">
+    <h2>Косметика</h2>
+    <div class="cosmetics-list">
+      <div class="cosmetic-item">
+        <img src="frame-50.png" alt="Крем">
+        <div class="cosmetic-description">
+          <p class="cosmetic-name">Разглаживающий крем для придания блеска волосам</p>
+          <p class="cosmetic-brand">TIGI BED HEAD After Party</p>
+          <div class="cosmetic-price-container">
+            <p class="cosmetic-price">1.622Р</p>
+          </div>
+        </div>
+      </div>
+      <div class="cosmetic-item">
+        <img src="frame-52.png" alt="Кондиционер">
+        <div class="cosmetic-description">
+          <p class="cosmetic-name">Кондиционер для окрашенных волос</p>
+          <p class="cosmetic-brand">L'Oreal Professionnel</p>
+          <div class="cosmetic-price-container">
+            <p class="cosmetic-price">1.056Р</p>
+          </div>
+        </div>
+      </div>
+      <div class="cosmetic-item">
+        <img src="frame-53.png" alt="Спрей">
+        <div class="cosmetic-description">
+          <p class="cosmetic-name">Спрей для придания объёма волосам</p>
+          <p class="cosmetic-brand">TIGI BED HEAD superstar Queen for a Day</p>
+          <div class="cosmetic-price-container">
+            <p class="cosmetic-price">1.200Р</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h2>Отзывы</h2>
+    <div class="review-list">
+      <div class="review-item">
+        <img src="ellipse-10.png" alt="Фото пользователя">
+        <div class="review-details">
+          <p class="review-name">No On</p>
+          <p class="review-text">Профессиональные мастера, советую!</p>
+        </div>
+      </div>
+      <div class="review-item">
+        <img src="ellipse-11.png" alt="Фото пользователя">
+        <div class="review-details">
+          <p class="review-name">Малик Изотов</p>
+          <p class="review-text">Отличный барбер шоп! Барбер Саид — настоящий профессионал, быстро и качественно выполняет свою работу.</p>
+        </div>
+      </div>
+      <div class="review-item">
+        <img src="ellipse-12.png" alt="Фото пользователя">
+        <div class="review-details">
+          <p class="review-name">Севиля Чулакова</p>
+          <p class="review-text">Всегда доволен качеством обслуживания. Саид — лучший мастер, всегда готов помочь с выбором стрижки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="online-booking-section" id="online-booking">
+    <h2>Онлайн запись</h2>
+    <form class="booking-form" id="bookingForm">
+      <div class="form-group">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Время:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <div class="form-group">
+        <label for="service">Услуга:</label>
+        <select id="service" name="service" required>
+          <option value="top-master">Топ-мастер</option>
+          <option value="senior-master">Старший-мастер</option>
+          <option value="junior-master">Младший-мастер</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-button">Записаться</button>
+      <div class="success-message" id="successMessage" style="display: none;">
+        <p>Запись прошла успешно на <span id="bookingDate"></span> в <span id="bookingTime"></span> к <span id="bookingMaster"></span>!</p>
+      </div>
+      <div class="error-message" id="errorMessage" style="display: none;">
+        <p>Выбранное время занято. Предлагаем записаться на <span id="alternativeDate"></span> в <span id="alternativeTime"></span> к <span id="alternativeMaster"></span>.</p>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <img src="_00.png" alt="Логотип">
+      </div>
+      <div class="copyright">
+        © 2014–2024 ООО “Персона”
+      </div>
+      <div class="social-icons">
+        <img src="telegram-10.png" alt="Telegram">
+        <img src="vk-10.png" alt="VK">
+        <img src="gmail-10.png" alt="Gmail">
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Добавим плавный скроллинг для кнопки "Узнать больше" в герое
+    document.querySelector('.hero .learn-more').addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetElement = document.querySelector('.services');
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+
+    // Добавим плавный скроллинг для кнопок с ценами в услугах
+    document.querySelectorAll('.service-price-button').forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetElement = document.querySelector('.online-booking-section');
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Обработка формы онлайн-записи
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Получаем значения из формы
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const service = document.getElementById('service').value;
+
+      // Пример данных о занятости времени (в реальности это может быть запрос на сервер)
+      const bookedSlots = [
+        { date: '2023-10-01', time: '10:00', master: 'top-master' },
+        { date: '2023-10-01', time: '11:00', master: 'senior-master' },
+        { date: '2023-10-01', time: '12:00', master: 'junior-master' },
+        // Добавьте другие занятые слоты по необходимости
+      ];
+
+      // Проверяем, занято ли выбранное время
+      const isBooked = bookedSlots.some(slot => slot.date === date && slot.time === time && slot.master === service);
+
+      if (isBooked) {
+        // Если время занято, показываем сообщение с предложением альтернативного времени
+        const errorMessage = document.getElementById('errorMessage');
+        const alternativeDate = document.getElementById('alternativeDate');
+        const alternativeTime = document.getElementById('alternativeTime');
+        const alternativeMaster = document.getElementById('alternativeMaster');
+
+        // Пример альтернативного времени (в реальности это может быть более сложная логика)
+        alternativeDate.textContent = '2023-10-02';
+        alternativeTime.textContent = '11:00';
+        alternativeMaster.textContent = 'Топ-мастер';
+
+        errorMessage.style.display = 'block';
+        document.getElementById('successMessage').style.display = 'none';
+      } else {
+        // Если время свободно, показываем сообщение о успешной записи
+        const successMessage = document.getElementById('successMessage');
+        const bookingDate = document.getElementById('bookingDate');
+        const bookingTime = document.getElementById('bookingTime');
+        const bookingMaster = document.getElementById('bookingMaster');
+
+        bookingDate.textContent = date;
+        bookingTime.textContent = time;
+        bookingMaster.textContent = service;
+
+        successMessage.style.display = 'block';
+        document.getElementById('errorMessage').style.display = 'none';
+
+        // Очищаем форму после успешной записи
+        this.reset();
+      }
+    });
+  </script>
+</body>
+</html>
